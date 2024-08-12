@@ -28,6 +28,7 @@ export default function UsersByDateLine({ authKey, authToken, datasetId, range, 
         },
         mode: 'line-chart',
       }}
+      // https://developer.luzmo.com/guide/flex-sdk--filters
       filters={[
         {
           condition: 'or',
@@ -36,9 +37,9 @@ export default function UsersByDateLine({ authKey, authToken, datasetId, range, 
               expression: '? >= ?',
               parameters: [
                 {
-                  column_id: '805e589f-d09c-4ff6-aef9-25a9f9d9d713', // Date
+                  column_id: '53339ca1-acb8-4343-b374-026d68869e38', // Date
                   dataset_id: datasetId,
-                  level: 1,
+                  level: 5,
                 },
                 date,
               ],
@@ -54,7 +55,7 @@ export default function UsersByDateLine({ authKey, authToken, datasetId, range, 
               label: {
                 en: 'Total users',
               },
-              column: 'e4beda7e-6ece-49fb-bc76-1c6f64a6eb2c',
+              column: '01911ca0-b12a-4731-93b8-722efdab36f3',
               set: datasetId,
               type: 'numeric',
               format: '.4f',
@@ -68,11 +69,10 @@ export default function UsersByDateLine({ authKey, authToken, datasetId, range, 
               label: {
                 en: 'Date',
               },
+              column: '53339ca1-acb8-4343-b374-026d68869e38',
               set: datasetId,
-              column: '805e589f-d09c-4ff6-aef9-25a9f9d9d713',
               type: 'datetime',
-              //   format: '%Y-%m-%d %H:%M:%S.%f',
-              //   format: '%amd~%Y %H:%M:%S.%L',
+              level: 5,
             },
           ],
         },

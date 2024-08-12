@@ -42,7 +42,6 @@ export default function UsersByDeviceDonut({ authKey, authToken, datasetId, rang
                 {
                   column_id: '89b1b5c8-560e-4533-9657-8cbee549fbde', // Date
                   dataset_id: datasetId,
-                  level: 1,
                 },
                 date,
               ],

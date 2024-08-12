@@ -18,15 +18,15 @@ export default async function Home() {
     access: {
       datasets: [
         {
-          id: 'c1b6293c-badd-4862-a203-14dc0e8c9c0f', // Total users by device category | Flex demo
+          id: 'c1b6293c-badd-4862-a203-14dc0e8c9c0f', // Donut Chart | Flex demo
           rights: 'use',
         },
         {
-          id: '41218089-791c-404f-aac1-b4fff8fc0817', // Total users over time | Flex demo
+          id: '8c865076-b7dd-48d9-a888-770fa1566e0d', // Line Chart | Flex demo
           rights: 'use',
         },
         {
-          id: 'da025b49-8a10-4d2b-90f8-14d7af20d29d', // Total users by page path and date | Flex demo
+          id: 'da025b49-8a10-4d2b-90f8-14d7af20d29d', // Bar Chart | Flex demo
           rights: 'use',
         },
       ],

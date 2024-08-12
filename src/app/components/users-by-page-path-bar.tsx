@@ -50,7 +50,6 @@ export default function UsersByPagePathBar({ authKey, authToken, datasetId, rang
                 {
                   column_id: '6dea730a-a961-4a56-ab33-9f252eb8c78a', // Date
                   dataset_id: datasetId,
-                  level: 1,
                 },
                 date,
               ],
