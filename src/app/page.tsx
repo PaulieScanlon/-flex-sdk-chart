@@ -1,5 +1,9 @@
+import dynamic from 'next/dynamic';
+
 import Luzmo from '@luzmo/nodejs-sdk';
-import LuzmoClientComponent from './components/luzmo-client-component';
+const LuzmoClientComponent = dynamic(() => import('./components/luzmo-client-component'), {
+  ssr: false,
+});
 
 const client = new Luzmo({
   api_key: process.env.LUZMO_API_KEY!,
